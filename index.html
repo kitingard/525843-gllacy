@@ -6,45 +6,40 @@
   </head>
   <body>
   	<header class="main-header">
+  		<img src="http://logo/glassy" width="154" height="64" alt="Логотип магазина Глейси">
   		<nav class="main-navigation">
-  			<a class="main-heder-logo">
-  				<img src="http://logo/glassy" width="" height="" alt="Логотип магазина Глейси">
-  			</a>
   			<ul class="site-navigation">
   				<li><button class="catalog">Каталог</button>
-            <ul class="visually-hidden catalog-dropdown">
-              <li><b>Новинки</b></li>
-              <li>Сливочное</li>
-              <li>Щербеты</li>
-              <li>Фруктовый лёд</li>
-              <li>Мелорин</li>
-            </ul>
-          </li>
+            		<ul class="visually-hidden catalog-dropdown">
+              			<li><b>Новинки</b></li>
+              			<li>Сливочное</li>
+              			<li>Щербеты</li>
+              			<li>Фруктовый лёд</li>
+              			<li>Мелорин</li>
+            		</ul>
+          		</li>
   				<li><a href="#">Доставка и оплата</a></li>
   				<li><a href="#">О компании</a></li>
   			</ul>
   			<ul class="user-navigation">
   				<li class="search">
-            <button class="search-btn">
-              <img src="http://search/pic" width="" height="" alt="Поиск">
-            </button>
-            <!-- Здесь будет форма -->
-          </li>
-  				<li class="login-link">
-            <button class="login-link-btn">Вход</button>
-            <!-- Здесь будет форма-->
-          </li>
+              		<img src="http://search/pic" width="30" height="30" alt="Поиск">
+              		<!-- Здесь будет форма -->
+          		</li>
+  				<li class="login-link">Вход
+            		<!-- Здесь будет форма-->
+          		</li>
   				<li class="cart">Корзина</li>
   			</ul>
   		</nav>
-  		<container class="contacts">
-  			<p class="working-hours">
-  				с 10 до 20, ежедневно
-  			</p>
-  			<p class="phone-number">
-  				8 812 450-25-25
-  			</p>
-  		</container>
+      	<div class="working-hours">
+        	<p>
+          		с 10 до 20, ежедневно
+        	</p>
+        	<p class="phone-number">
+          		8 812 450-25-25
+        	</p>
+    	</div>
   	</header>
 
   	<main class="container">
@@ -54,13 +49,13 @@
       <section class="slider">
   		  <h2 class="visually-hidden">Витрина</h2>
   		  <ul class="shop-window">
-  			 <li><img src="http://icecream/first" width="" height="" alt="Крем-брюле и пломбир с малиновым джемом">
+  			 <li><img src="http://icecream/first" width="300" height="200" alt="Крем-брюле и пломбир с малиновым джемом">
            <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
           </li>
-  			 <li><img src="http://icecream/second" width="" height="" alt="Шоколадный пломбир и лимонный сорбет">
+  			 <li><img src="http://icecream/second" width="300" height="200" alt="Шоколадный пломбир и лимонный сорбет">
             <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
           </li>
-  			 <li><img src="http://icecream/third" width="" height="" alt="Пломбир с помадкой и клубничный щербет">
+  			 <li><img src="http://icecream/third" width="300" height="200" alt="Пломбир с помадкой и клубничный щербет">
             <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
          </li>
   		  </ul>
@@ -84,30 +79,30 @@
 
       <section class="popular-items">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="popular-item">
-          <li class="first-item">
-            <img src="http://picture" width="" height="" alt="хит">
-            <img src="http://items/first" width="" height="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            <p>310₽<span class="kg">/кг</span></p>
-            <button class="select-item">Сливочное с апельсиновым джемом и цитрусовой стружкой</button>
+        <ul class="catalog-list">
+          <li class="popular-item catalog-item">
+            <img src="http://items/first" width="250" height="250" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <span class="price">310₽</span>
+            <span class="kg">/кг</span>
+            <a class="catalog-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
-          <li class="second-item">
-            <img src="http://picture" width="" height="" alt="хит">
-            <img src="http://items/second" width="" height="" alt="Сливочно-кофейное с кусочками шоколада">
-            <p>380₽<span class="kg">/кг</span></p>
-            <button class="select-item">Сливочно-кофейное с кусочками шоколада</button>
+          <li class="popular-item catalog-item">
+            <img src="http://items/second" width="250" height="250" alt="Сливочно-кофейное с кусочками шоколада">
+            <span class="price">380₽</span>
+            <span class="kg">/кг</span>
+            <a class="scatalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </li>
-          <li class="third-item">
-            <img src="http://picture" width="" height="" alt="хит">
-            <img src="http://items/third" width="" height="" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p>355₽<span class="kg">/кг</span></p>
-            <button class="select-item">Сливочно-клубничное с присыпкой из белого шоколада</button>
+          <li class="popular-item catalog-item">
+            <img src="http://items/third" width="250" height="250" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <span class="price">355₽</span>
+            <span class="kg">/кг</span>
+            <a class="catalog-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
-            <li class="fourth-item">
-            <img src="http://picture" width="" height="" alt="хит">
-            <img src="http://items/fourth" width="" height="" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p>415₽<span class="kg">/кг</span></p>
-            <button class="select-item">Сливочное крем-брюле с карамельной подливкой</button>
+            <li class="popular-item catalog-item">
+            <img src="http://items/fourth" width="250" height="250" alt="Сливочное крем-брюле с карамельной подливкой">
+            <span class="price">415₽</span>
+            <span class="kg">/кг</span>
+            <a class="catalog-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
           </li>
         </ul>
       </section>
@@ -149,6 +144,7 @@
 
       <div class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
+        <img src="http://pic/map" width="1000" height="300" alt="Как к нам добраться">
         <p>
           Адрес главного офиса и офлайн-магазина:
           <b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
