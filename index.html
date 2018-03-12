@@ -24,13 +24,29 @@
   		</nav>
       <div class="user-navigation-list">
         <ul class="user-navigation">
-          <li class="search">
-                  <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
-                  <!-- Здесь будет форма -->
-              </li>
-          <li class="login-link">Вход
-                <!-- Здесь будет форма-->
-              </li>
+          <li class="search">  
+              <a href="#"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></a>
+                <form name="search-button" action="https://echo.htmlacademy.ru" method="post">
+                  <label class="visually-hidden" for="main-search">Поиск</label>
+                  <input type="search" name="search" id="main-search" placeholder="Что ищем?">
+                </form>
+          </li>
+          <li class="login-link">
+              <a href="#">Вход</a>
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label for="login-link-email"></label>
+                <input type="text" id="login-link-email" name="email" placeholder="Электронная почта">
+                <label for="login-link-password"></label>
+                <input type="password" id="login-link-password" name="password" placeholder="Пароль">
+                <input type="submit" value="Войти">
+                <p>
+                  <a href="#">Забыли пароль?</a>
+                </p>
+                <p>
+                  <a href="#">Новая регистрация</a>
+                </p>
+              </form>
+          </li>
           <li class="cart">Корзина</li>
         </ul>
       </div>
@@ -145,6 +161,7 @@
           <p>Новое в нашем блоге</p>
         </header>
         <section class="post-content">
+          <h3 class="visually-hidden">10 способов сервировки фруктовых щербетов к столу</h3>
           <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
         </section>
       </article>
@@ -152,7 +169,11 @@
       <div class="mailing">
         <h2 class="visually-hidden">Рассылка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Здесь будет форма -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="mailing-email">Подписка на рассылку</label>
+            <input type="text" name="email" id="mailing-email" placeholder="Электронная почта">
+            <input type="submit" value="Отправить">
+        </form>
       </div>
 
       <div class="contacts">
@@ -167,17 +188,26 @@
           <b>8 812 450-25-25</b>
           (с 10 до 20 ежедневно)
         </p>
-        <!-- Здесь будет форма -->
+        <a href="#">Форма обратной связи</a>
+        <form name="feedback" action="https://echo.htmlacademy.ru" method="post">
+          <p>Мы обязательно вам ответим!</p>
+          <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
+          <input type="text" name="name-for-feedback" id="feedback-name" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
+          <input type="text" name="email-for-feedback" id="feedback-email" placeholder="Ваша почта для ответа">
+          <textarea name="feedback-textarea" rows="5">Напишите что-нибудь...</textarea>
+          <input type="submit" value="Отправить">
+        </form>
       </div>
   	</main>
 
   	<footer class="main-footer">
   		<div class="footer-social">
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Инстаграм</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Вконтакте</a></li>
+          <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
+          <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
+          <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
+          <li><a href="#" aria-label="Вконтакте">Вконтакте</a></li>
         </ul>
       </div>
 
