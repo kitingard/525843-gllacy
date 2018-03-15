@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Сливочное мороженое</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css"> <!--сюда normalize-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
@@ -87,37 +90,29 @@
       </ul>
       <h1 class="page-title">Сливочное мороженое</h1>
 
-      <section class="filter">
+      <section class="sort">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form name="goods-filters" action="https://echo.htmlacademy.ru" method="post">
-          <label for="goods-filters-variety">Сортировка:</label>
-          <select id="goods-filters-variety" name="filters">
-              <option value="popular-items-first">по популярности</option>
-              <option value="cheap-items-first">сначала недорогие</option>
-              <option value="expensive-items-first">сначала дорогие</option>
-              <option value="fat-content-items-first">по жирности</option>
+        <form name="sort-type" action="https://echo.htmlacademy.ru" method="post">
+          <label for="sort-type-by">Сортировка:</label>
+          <select id="sort-type-by" name="filters">
+              <option value="sort-type-by-popular-items">по популярности</option>
+              <option value="sort-type-by-cheap-items">сначала недорогие</option>
+              <option value="sort-type-by-expensive-items">сначала дорогие</option>
+              <option value="sort-type-by-fat-content-items">по жирности</option>
           </select>
           <div class="price-filter">
             <span>Цена: 100 руб. - 500 руб.</span>
           </div>
           <fieldset>
             <legend>Жирность:</legend>
-            <label>
-              <input type="radio" name="fat-content-filter" value="0pc">
-                0%
-            </label>
-            <label>
-              <input type="radio" name="fat-content-filter" value="up-to-10pc" checked>
-                до 10%
-            </label>
-            <label>
-              <input type="radio" name="fat-content-filter" value="up-to-30pc">
-                до 30%
-            </label>            
-            <label>
-              <input type="radio" name="fat-content-filter" value="above-30pc">
-                выше 30%
-            </label>
+            <label for="fat-content-0pc">0%</label>
+            <input type="radio" name="fat-content-filter" id="fat-content-0pc" value="0pc">
+            <label for="fat-content-up-to-10pc">до 10%</label>
+            <input type="radio" name="fat-content-filter" id="fat-content-up-to-10pc" value="up-to-10pc" checked>
+            <label for="fat-content-up-to-30pc">до 30%</label>  
+            <input type="radio" name="fat-content-filter" id="fat-content-up-to-30pc" value="up-to-30pc">        
+            <label for="fat-content-above-30pc">выше 30%</label>
+            <input type="radio" name="fat-content-filter" id="fat-content-above-30pc" value="above-30pc">
           </fieldset>
           <fieldset>
             <legend>Наполнители</legend>

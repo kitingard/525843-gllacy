@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", "Verdana", sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: ;
+	color: #323232;
+	background-color: #849d8f;
+	background-position: center;
+}
+
+.main-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.site-navigation a:focus, 
+.catalog-dropdown a:focus {
+	font-size:14px;
+	line-height: 16pt;
+	color: #323232;
+
+}
+
+.site-navigation, 
+.catalog-dropdown, 
+.user-navigation {
+	list-style: none;
+}
+
+.user-navigation {
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.login-link-form {
+	font-size: 14px;
+	line-height: 24px;
+	color: #999999;
+}
+
+.working-hours p {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.phone-number {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.shop-window {
+	list-style: none;
+	font-size: 60px;
+	line-height: 60,35px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.shop-window-button {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.promo-items
