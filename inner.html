@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Сливочное мороженое</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic">
-    <link rel="stylesheet" href="css/normalize.css"> <!--сюда normalize-->
+    <link rel="stylesheet" href="css/normalize.css"> 
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -24,14 +24,14 @@
         <ul class="user-navigation">
           <li class="search">
               <a href="#"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></a>
-                <form name="search-button" action="https://echo.htmlacademy.ru" method="post">
+                 <!-- <form name="search-button" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="main-search">Поиск</label>
                   <input type="search" name="search" id="main-search" placeholder="Что ищем?">
-                </form>
+                </form> -->
           </li>
           <li class="login-link">
               <a href="#">Вход</a>
-              <form action="https://echo.htmlacademy.ru" method="post">
+              <!-- <form class="login-link-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="login-link-email"></label>
                 <input type="text" id="login-link-email" name="email" placeholder="Электронная почта">
                 <label for="login-link-password"></label>
@@ -43,11 +43,11 @@
                 <p>
                   <a href="#">Новая регистрация</a>
                 </p>
-              </form>
+              </form> -->
           </li>
           <li class="cart">
             <a href="#">Корзина</a>
-              <table class="cart-items">
+              <!-- <table class="cart-items">
                 <tr class="visually-hidden">
                   <td>Фото</td>
                   <td>Описание</td>
@@ -68,17 +68,17 @@
                 </tr>
               </table>
               <p>Итого: 750 руб.</p>
-              <button name="cart-order" type="submit">Оформить заказ</button>
+              <a class="button">Оформить заказ</a> -->
           </li>
         </ul>
       </div>
       <div class="working-hours">
-        <p>
-          с 10 до 20, ежедневно
-        </p>
-        <p class="phone-number">
-          8 812 450-25-25
-        </p>
+          <p>
+              с 10 до 20, ежедневно
+          </p>
+          <span>
+              8 812 450-25-25
+          </span>
       </div>
   	</header>
 
@@ -92,8 +92,8 @@
 
       <section class="sort">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form name="sort-type" action="https://echo.htmlacademy.ru" method="post">
-          <label for="sort-type-by">Сортировка:</label>
+        <form name="sort-type-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="sort-type" for="sort-type-by">Сортировка:</label>
           <select id="sort-type-by" name="filters">
               <option value="sort-type-by-popular-items">по популярности</option>
               <option value="sort-type-by-cheap-items">сначала недорогие</option>
@@ -101,10 +101,10 @@
               <option value="sort-type-by-fat-content-items">по жирности</option>
           </select>
           <div class="price-filter">
-            <span>Цена: 100 руб. - 500 руб.</span>
+            <span class="sort-type">Цена: 100 руб. - 500 руб.</span>
           </div>
-          <fieldset>
-            <legend>Жирность:</legend>
+          <fieldset class="sort-type-items">
+            <legend class="sort-type">Жирность:</legend>
             <label for="fat-content-0pc">0%</label>
             <input type="radio" name="fat-content-filter" id="fat-content-0pc" value="0pc">
             <label for="fat-content-up-to-10pc">до 10%</label>
@@ -114,8 +114,8 @@
             <label for="fat-content-above-30pc">выше 30%</label>
             <input type="radio" name="fat-content-filter" id="fat-content-above-30pc" value="above-30pc">
           </fieldset>
-          <fieldset>
-            <legend>Наполнители</legend>
+          <fieldset class="sort-type-items">
+            <legend class="sort-type">Наполнители</legend>
             <label>
               <input type="checkbox" name="filling-filter" value="chocolate" checked>
                 шоколадные
@@ -137,7 +137,7 @@
               джем
             </label>
           </fieldset>
-          <input type="submit" value="Применить">
+          <button class="sort-type-btn" type="submit" value="Применить">Применить</button>
         </form>
       </section>
       <section class="catalog">
@@ -157,7 +157,7 @@
               <span class="price">380₽</span>
               <span class="kg">/кг</span>
             </div>
-            <a class="scatalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="catalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li class="catalog-item">
             <img src="img/item3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">

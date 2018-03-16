@@ -11,32 +11,32 @@
   	<header class="main-header">
   		<img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
   		<nav class="main-navigation">
-  			<ul class="site-navigation">
-  				<li><a class="catalog">Каталог</a>
-            		<ul class="catalog-dropdown">
-              			<li><a href="#"><b>Новинки</b></a></li>
+  			<ul>
+  				<li class="site-navigation"><a href="#" class="catalog">Каталог</a>
+            		<!--<ul class="catalog-dropdown">
+              			<li><a href="#"><span>Новинки</span></a></li>
               			<li><a href="#">Сливочное</a></li>
               			<li><a href="#">Щербеты</a></li>
               			<li><a href="#">Фруктовый лёд</a></li>
               			<li><a href="#">Мелорин</a></li>
-            		</ul>
-          		</li>
-  				<li><a href="#">Доставка и оплата</a></li>
-  				<li><a href="#">О компании</a></li>
+            		</ul> -->
+          </li>
+  				<li class="site-navigation"><a href="#">Доставка и оплата</a></li>
+  				<li class="site-navigation"><a href="#">О компании</a></li>
   			</ul>
   		</nav>
       <div class="user-navigation-list">
         <ul class="user-navigation">
           <li class="search">  
               <a href="#"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></a>
-                <form name="search-button" action="https://echo.htmlacademy.ru" method="post">
+                <!-- <form name="search-button" action="https://echo.htmlacademy.ru" method="post">
                   <label class="visually-hidden" for="main-search">Поиск</label>
                   <input type="search" name="search" id="main-search" placeholder="Что ищем?">
-                </form>
+                </form> -->
           </li>
           <li class="login-link">
               <a href="#">Вход</a>
-              <form action="https://echo.htmlacademy.ru" method="post">
+              <!-- <form class="login-link-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="login-link-email"></label>
                 <input type="text" id="login-link-email" name="email" placeholder="Электронная почта">
                 <label for="login-link-password"></label>
@@ -48,18 +48,18 @@
                 <p>
                   <a href="#">Новая регистрация</a>
                 </p>
-              </form>
+              </form> -->
           </li>
-          <li class="cart">Корзина</li>
+          <li class="cart"><a href="#">Корзина</a></li>
         </ul>
       </div>
       <div class="working-hours">
         	<p>
           		с 10 до 20, ежедневно
         	</p>
-        	<p class="phone-number">
+        	<span>
           		8 812 450-25-25
-        	</p>
+        	</span>
     	</div>
   	</header>
 
@@ -74,15 +74,32 @@
             <h2 class="ship-window-title">Крем-брюле и пломбир с малиновым джемом</h2>
             <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
           </li>
-          <li><img src="img/background2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+          <!-- <li><img src="img/background2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
             <h2 class="ship-window-title">Шоколадный пломбир и лимонный сорбет</h2>
             <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
           </li>
           <li><img src="img/background3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
             <h2 class="ship-window-title">Пломбир с помадкой и клубничный щербет</h2>
             <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
-          </li>
+          </li> -->
   		  </ul>
+        <ul class="slides-switches">
+          <li class="slide-radio">
+            <button class="slide-btn">
+              Первый слайд
+            </button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">
+              Второй слайд
+            </button>
+          </li>
+          <li class="slide-radio">
+            <button class="slide-btn">
+              Третий слайд
+            </button>
+          </li>
+        </ul>
       </section>
 
   		<section class="promo">
@@ -107,34 +124,34 @@
           <li class="popular-item catalog-item">
             <img src="img/item1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <div class="price-kg">
-              <span class="price">380₽</span>
-              <span class="kg">/кг</span>
+              <p>380₽<span class="kg">/кг</span></p>
             </div>
             <a class="catalog-item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="button button-hidden" href="#">Быстрый просмотр</a>
           </li>
           <li class="popular-item catalog-item">
             <img src="img/item2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
             <div class="price-kg">
-              <span class="price">380₽</span>
-              <span class="kg">/кг</span>
+              <p>380₽<span class="kg">/кг</span></p>
             </div>
-            <a class="scatalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="catalog-item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="button button-hidden" href="#">Быстрый просмотр</a>
           </li>
           <li class="popular-item catalog-item">
             <img src="img/item3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <div class="price-kg">
-              <span class="price">380₽</span>
-              <span class="kg">/кг</span>
+              <p>380₽<span class="kg">/кг</span></p>
             </div>
             <a class="catalog-item-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="button button-hidden" href="#">Быстрый просмотр</a>
           </li>
             <li class="popular-item catalog-item">
             <img src="img/item4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
             <div class="price-kg">
-              <span class="price">380₽</span>
-              <span class="kg">/кг</span>
+              <p>380₽<span class="kg">/кг</span></p>
             </div>
             <a class="catalog-item-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="button button-hidden" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -175,7 +192,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="mailing-email">Подписка на рассылку</label>
             <input type="text" name="email" id="mailing-email" placeholder="Электронная почта">
-            <input type="submit" value="Отправить">
+            <input class="button" type="submit" value="Отправить">
         </form>
       </div>
 
@@ -191,8 +208,8 @@
           <b>8 812 450-25-25</b>
           (с 10 до 20 ежедневно)
         </p>
-        <a href="#">Форма обратной связи</a>
-        <form name="feedback" action="https://echo.htmlacademy.ru" method="post">
+        <a class="button" href="#">Форма обратной связи</a>
+        <!-- <form name="feedback" action="https://echo.htmlacademy.ru" method="post">
           <p>Мы обязательно вам ответим!</p>
           <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
           <input type="text" name="name-for-feedback" id="feedback-name" placeholder="Как вас зовут?">
@@ -200,7 +217,7 @@
           <input type="text" name="email-for-feedback" id="feedback-email" placeholder="Ваша почта для ответа">
           <textarea name="feedback-textarea" rows="5">Напишите что-нибудь...</textarea>
           <input type="submit" value="Отправить">
-        </form>
+        </form> -->
       </div>
   	</main>
 
