@@ -1,3 +1,11 @@
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -32,6 +40,43 @@ body {
 .footer-social ul,
 .footer-info ul {
 	list-style: none;
+}
+
+.main-header {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px 27px 0;
+}
+
+.main-navigation {
+	margin-right: 356px;
+	width: 353px;
+	min-height: 20px;
+}
+
+.main-navigation ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+.user-navigation-list {
+	width: 261px;
+	min-height: 34px;
+}
+
+.user-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 261px;
+	min-height: 34px;
+}
+
+.working-hours {
+	width: 170px;
+	min-height: 45px;
+	margin-left: 960px;
+	margin-top: -20px;
+	text-align: right;
 }
 
 .site-navigation a {
@@ -114,11 +159,34 @@ body {
 }
 
 .shop-window {
+	display: flex;
+	margin-right: 27px;
 	list-style: none;
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: bold;
 	color: #ffffff;
+}
+
+.shop-window img {
+	margin-top: -186px;
+	margin-left: 52px;
+}
+
+.shop-window h2 {
+	width: 1045px;
+	height: 130px;
+	text-align: center;
+	margin-top: -500px;
+
+}
+
+.shop-window p {	
+	width: 282px;
+	min-height: 66px;
+	margin-top: -60px;
+	margin-left: 460px;
+	margin-bottom: 63px;
 }
 
 .shop-window-button {
@@ -148,6 +216,10 @@ body {
 	box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 
+.slide-radio {
+	display: flex;
+	margin: -135px 0 63px 27px;
+}
 
 .slide-radio button:nth-of-type(1){
 	height: 20px;
@@ -179,7 +251,23 @@ body {
   position: absolute;
 }
 
+
+.promo-items {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.promo-items li {
+	width: 560px;
+	min-height: 230px;
+	margin-left: 27px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
 .promo-items h3 {
+	margin: 0;
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: bold;

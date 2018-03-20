@@ -83,23 +83,17 @@
             <p><a href="#" class="shop-window-button">Давайте оба!</a></p>
           </li> -->
   		  </ul>
-        <ul class="slides-switches">
-          <li class="slide-radio">
+        <div class="slide-radio">
             <button class="slide-btn">
               Первый слайд
             </button>
-          </li>
-          <li class="slide-radio">
             <button class="slide-btn">
               Второй слайд
             </button>
-          </li>
-          <li class="slide-radio">
             <button class="slide-btn">
               Третий слайд
             </button>
-          </li>
-        </ul>
+        </div>
       </section>
 
   		<section class="promo">
@@ -156,7 +150,7 @@
         </ul>
       </section>
 
-      <section class="features">
+      <article class="features">
         <h2 class="visually-hidden">Преимущества</h2>
         <p>Магазин Глэйси - это онлан- и офлайн- магазин по продаже мороженого собственного производства на развес</p>
         <ul>
@@ -173,23 +167,22 @@
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
-      </section>
-
-      <article class="blog">
-        <h2 class="visually-hidden">Новое в блоге</h2>
-        <header class="post-header">
-          <p>Новое в нашем блоге</p>
-        </header>
-        <section class="post-content">
-          <h3 class="visually-hidden">10 способов сервировки фруктовых щербетов к столу</h3>
-          <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-        </section>
       </article>
 
+      <section class="blog">
+        <div class="post-header">
+          <p>Новое в нашем блоге</p>
+        </div>
+        <div class="post-content">
+          <h3 class="visually-hidden">10 способов сервировки фруктовых щербетов к столу</h3>
+          <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+        </div>
+      </section>
+
       <div class="mailing">
-        <h2 class="visually-hidden">Рассылка</h2>
+        <h2 class="visually-hidden">Форма подписки на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="mailing-email">Подписка на рассылку</label>
             <input type="text" name="email" id="mailing-email" placeholder="Электронная почта">
             <input class="button" type="submit" value="Отправить">
@@ -201,11 +194,11 @@
         <img src="img/map-with-marker.jpg" width="1200" height="430" alt="Как к нам добраться">
         <p>
           Адрес главного офиса и офлайн-магазина:
-          <b>ул.Большая Конюшенная 19/8, Санкт-Петербург</b>
+          <span>ул.Большая Конюшенная 19/8, Санкт-Петербург</span>
         </p>
         <p>
           Для заказов по телефону:
-          <b>8 812 450-25-25</b>
+          <span>8 812 450-25-25</span>
           (с 10 до 20 ежедневно)
         </p>
         <a class="button" href="#">Форма обратной связи</a>
@@ -216,14 +209,14 @@
           <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
           <input type="text" name="email-for-feedback" id="feedback-email" placeholder="Ваша почта для ответа">
           <textarea name="feedback-textarea" rows="5">Напишите что-нибудь...</textarea>
-          <input type="submit" value="Отправить">
+          <input class="button" type="submit" value="Отправить">
         </form> -->
       </div>
   	</main>
 
   	<footer class="main-footer">
   		<div class="footer-social">
-        <ul>
+        <ul class="social-list">
           <li><a href="#" aria-label="Твиттер">Твиттер</a></li>
           <li><a href="#" aria-label="Инстаграм">Инстаграм</a></li>
           <li><a href="#" aria-label="Фейсбук">Фейсбук</a></li>
