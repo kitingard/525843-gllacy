@@ -14,17 +14,17 @@
           <img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
         </a>
   		  <nav class="main-navigation">
-  			 <ul class="site-navigation">
-  			 	 <li><a class="site-navigation-current" href="#">Каталог</a>
+  			 <ul class="site-navigation-list">
+  			 	 <li class="site-navigation"><a class="site-navigation-current" href="#">Каталог</a>
             </li>
-  				  <li><a href="#">Доставка и оплата</a></li>
-  				  <li><a href="#">О компании</a></li>
+  				  <li class="site-navigation"><a href="#">Доставка и оплата</a></li>
+  				  <li class="site-navigation"><a href="#">О компании</a></li>
   			 </ul>
   		  </nav>
-        <div class="user-navigation-list">
-          <ul class="user-navigation">
+        <div class="user-navigation">
+          <ul class="user-navigation-list">
             <li class="search">
-                <a href="#"><img src="img/loupe.svg" width="17" height="17" alt="Поиск"></a>
+                <a href="#" aria-label="Поиск"></a>
                   <!-- <form name="search-button" action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="main-search">Поиск</label>
                     <input type="search" name="search" id="main-search" placeholder="Что ищем?">
@@ -250,11 +250,13 @@
           </li>
         </ul>
          <ul class="pagination-list">
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item prev"><a href="#">Назад</a></li>
+          <li class="pagination-item current"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">4</a></li>
           <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-item next"><a href="#">Вперед</a></li>
         </ul>
       </div>
       </section>
