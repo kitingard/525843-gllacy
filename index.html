@@ -22,8 +22,8 @@
               			<li><a href="#">Мелорин</a></li>
             		</ul>
             </li>
-  				  <li class="site-navigation"><a href="delivery.html">Доставка и оплата</a></li>
-  				  <li class="site-navigation"><a href="aboutus.html">О Компании</a></li>
+  				  <li class="site-navigation"><a href="#">Доставка и оплата</a></li>
+  				  <li class="site-navigation"><a href="#">О Компании</a></li>
   			 </ul>
   		  </nav>
         <div class="user-navigation">
@@ -51,7 +51,7 @@
                   </div>
                 </form>
             </li>
-            <li class="cart"><a href="#" aria-label="Корзина">Пусто</a></li>
+            <li class="cart"><a class="cart-icon" href="#" aria-label="Корзина">Пусто</a></li>
           </ul>
         </div>
         <div class="working-hours">
@@ -214,17 +214,23 @@
             <span>8 812 450-25-25</span>
             <p>(с 10 до 20 ежедневно)</p>
             <a class="button" href="#">Форма обратной связи</a>
-            <!-- <form name="feedback" action="https://echo.htmlacademy.ru" method="post">
+          </div>
+        </div>
+      </div>
+      <div class="modal-form">
+          <form name="feedback" action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal-wrapper">
               <p>Мы обязательно вам ответим!</p>
+              <a class="close-btn"><span class="visually-hidden">Закрыть окно обратной связи</span></a>
+              </div>
               <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
               <input type="text" name="name-for-feedback" id="feedback-name" placeholder="Как вас зовут?">
               <label class="visually-hidden" for="feedback-email">Ваша почта для ответа</label>
               <input type="text" name="email-for-feedback" id="feedback-email" placeholder="Ваша  почта для ответа">
               <textarea name="feedback-textarea" rows="5">Напишите что-нибудь...</textarea>
               <input class="button" type="submit" value="Отправить">
-            </form> -->
-          </div>
-        </div>
+          </form> 
+          <div class="modal-overlay"></div>
       </div>
   	</main>
 
