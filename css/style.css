@@ -168,7 +168,7 @@ body {
 }	
 
 .user-navigation {
-	margin-left: 327px;
+	margin-left: 325px;
 }
 
 .user-navigation-list  {
@@ -543,7 +543,7 @@ body {
 }
 
 .working-hours {
-	padding-top: 13px;
+	padding-top: 16px;
 	width: 170px;
 	min-height: 45px;
 	margin-left: 978px;
@@ -553,14 +553,17 @@ body {
 
 .working-hours p {
 	margin: 0;
+	margin-bottom: 1px;
 	padding: 3px 0;
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: bold;
+	font-weight: normal;
+	letter-spacing: normal;
 	color: #ffffff;
 }
 
 .working-hours span {
+	padding-left: 1px;
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: bold;
@@ -570,7 +573,7 @@ body {
 .slider {
 	position: relative;
 	z-index: 3;
-	margin: -137px 20px 30px 35px;
+	margin: -132px 20px 30px 41px;
 }
 
 .shop-window {
@@ -593,7 +596,7 @@ body {
 .shop-window h2 {
 	width: 700px;
 	text-align: center;
-	margin: -490px auto 40px;
+	margin: -492px auto 40px;
 	font-size: 60px;
 	line-height: 60.35px;
 	font-weight: bold;
@@ -601,7 +604,9 @@ body {
 }
 
 .shop-window p {	
-	margin: 0 407px 40px;
+	padding: 0 50%;
+	margin-left: -139px;
+	margin-top: -10px;
 }
 
 .shop-window-button {
@@ -610,7 +615,7 @@ body {
 	width: 279px;
 	height: 63px;
 	border-radius: 50px;
-	padding: 12px 40px;
+	padding: 8px 40px 15px;
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: bold;
@@ -640,14 +645,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	width: 79px;
-	margin: -90px 0 56px 0;
+	margin: -75px 0 63px -11px;
 }
 
 .slide-btn {
 	height: 21px;
 	width: 21px;
 	color: transparent;
-	border: 3px solid #ffffff;
+	border: 2px solid #ffffff;
 	border-radius: 50%;
 	background-color: #849d8f;
 }
@@ -675,18 +680,18 @@ body {
 
 .promo-items {
 	display: flex;
-	margin: 0 0 40px;
+	margin: 0 0 39px;
 	padding: 0;
 }
 
 .promo-items li {
-	width: 560px;
+	width: 562px;
 	min-height: 230px;
-	padding: 20px 16px;
+	padding: 16px 18px;
 }
 
 .promo-items li:first-of-type {
-	margin-right: 27px;
+	margin-right: 26px;
 }
 
 .promo-items h3 {
@@ -698,6 +703,9 @@ body {
 }
 
 .promo-items p {
+	display: block;
+	margin-top: 14px;
+	margin-left: 1px;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
@@ -708,7 +716,7 @@ body {
 	position: absolute;
 	bottom: 24px;
 	right: 21px;
-	padding: 12px 20px 0;
+	padding: 10px 22px 13px;
 }
 
 .button {
@@ -720,8 +728,8 @@ body {
 	font-weight: bold;
 	color: #ffffff;
 	text-decoration: none;
-	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+	background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);;
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .button:hover,
@@ -739,14 +747,14 @@ body {
 	position: relative;
 	background-image: url("../img/jam.jpg");
 	background-repeat: no-repeat;
-	border-radius: 17px;
+	border-radius: 15px;
 }
 
 .promo-chocolate {
 	position: relative;
 	background-image: url("../img/chocolate.jpg");
 	background-repeat: no-repeat;
-	border-radius: 17px;
+	border-radius: 15px;
 }
 
 .catalog-list {
@@ -761,7 +769,7 @@ body {
 	position: relative;
 	width: 267px;
 	min-height: 270px;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 }
 
 .catalog-item img {
@@ -774,13 +782,14 @@ body {
 
 .price-kg p {
 	position: absolute;
-	top: 210px;
-	left: 0px;
+	top: 209px;
+	left: -1px;
 	margin: 0;
 	font-size: 45px;
 	line-height: 45px;
 	font-weight: bold;
 	color: #ffffff;
+	text-shadow: 1px 1px 1px #323232;
 }
 
 .price-kg p::before {
@@ -788,8 +797,8 @@ body {
 	width: 31px;
 	height: 36px;
 	position: absolute;
-	top: 5px;
-	left: 79px;
+	top: 6px;
+	left: 81px;
 	background-image: url("../img/ruble.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -809,7 +818,7 @@ body {
 }
 
 .price-kg span {
-	padding-left: 32px;
+	padding-left: 36px;
 	font-size: 30px;
 	line-height: 45px;
 	font-weight: bold;
@@ -819,7 +828,7 @@ body {
 .catalog-item-title {
 	position: relative;
 	display: block;
-	margin-top: 15px;
+	margin-top: 9px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
