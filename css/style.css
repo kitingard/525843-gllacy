@@ -106,21 +106,11 @@ body {
 	position: absolute;
 	top: 42px;
 	left: -8px;
-	padding: 5px 0;
+	width: 143px;
+	padding: 0;
 	background-color: rgb(248, 247, 244);
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
-}
-
-.catalog-dropdown a {
-	display: block;
-	padding: 7px 19px;
-	font-size: 14px;
-	line-height: 16pt;
-	font-weight: normal;
-	color: #323232;
-	border-radius: 0;
-	text-decoration: none;
 }
 
 .catalog-dropdown::before {
@@ -133,12 +123,36 @@ body {
 	opacity: 0;
 }
 
+.catalog-dropdown a {
+	display: block;
+	margin: 0;
+	padding: 7px 0 7px 20px;
+	font-size: 14px;
+	line-height: 16pt;
+	font-weight: normal;
+	color: #323232;
+	border-radius: 0;
+	text-decoration: none;
+}
+
 .catalog-dropdown li:first-of-type a {
 	display: block;
-	padding: 7px 0 13px 14px;
-	margin: 0 9px 0 6px;
-	border-bottom: 1px solid #d1d0ce;
+	padding: 12px 0 14px 20px;
 	font-weight: bold;
+}
+
+.catalog-dropdown li:first-of-type a::before {
+	content:"";
+	position: absolute;
+	top: 46px;
+	left: 6px;
+	width: 128px;
+	height: 1px;
+	background-color: #d1d0ce;
+}
+
+.catalog-dropdown li:nth-of-type(2) a {
+	padding: 11px 0 12px 20px;
 }
 
 .catalog-dropdown a:hover,
@@ -150,10 +164,11 @@ body {
 .catalog-dropdown a:active {
 	background-color: #f6b5a5;
 	border-radius: 0;
+	border: none;
 }	
 
 .user-navigation {
-	margin-left: 325px;
+	margin-left: 327px;
 }
 
 .user-navigation-list  {
@@ -433,7 +448,7 @@ body {
 	right: 0;
 	width: 540px;
 	height: 242px;
-	padding: 20px 15px 20px 15px;
+	padding: 20px 15px 20px 13px;
 	background-color: #f8f7f4;
 	border-radius: 5px;
 }
@@ -445,7 +460,6 @@ body {
 	right: 0;
 	width: 120px;
 	height: 5px;
-	background-color: red;
 	opacity: 0;
 }
 
@@ -468,10 +482,13 @@ body {
 	padding: 10px 0 0 0;
 }
 
-.cart-items td:first-of-type {
+.cart-items button {
 	width: 11px;
 	height: 11px;
 	padding: 11px 0;
+	background: none;
+    border: 0;
+    padding: 11px 0;
 	background-image: url("../img/cross-small.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -517,7 +534,7 @@ body {
 
 .cart-wrapper .button {
 	width: 170px;
-	height: 44px;
+	min-height: 44px;
 	padding: 10px 13px 12px 13px;
 	margin-left: 340px;
 	font-size: 18px;
@@ -1011,7 +1028,7 @@ body {
 
 .mailing-form input[type="text"] {
 	width: 368px;
-	height: 43px;
+	min-height: 44px;
 	margin-right: 5px;
 	padding-left: 13px;
 	border-radius: 5px;
@@ -1030,7 +1047,7 @@ body {
 
 .form-btn {
 	width: 129px;
-	height: 45px;
+	padding: 10px 16px;
 	border-style: none;
 }
 
@@ -1078,19 +1095,21 @@ body {
 
 .contacts-form .button {
 	margin-top: 25px;
-	padding: 12px 27px;
+	padding: 10px 27px;
 }
 
 .modal-form {
-	display: block;
+	display: none;
 	position: fixed;
 	top: 20%;
-	left: 336px;
+	left: 50%;
 	width: 477px;
-	height: 442px;
+	min-height: 442px;
+	margin-left: -237px;
 	padding: 17px 25px;
 	background-color: #f8f7f4;
 	border-radius: 10px;
+	z-index: 4;
 }
 
 .modal-wrapper {
@@ -1111,6 +1130,8 @@ body {
 	width: 18px; 
 	height: 17px;
 	margin-right: -8px;
+	background: none;
+    border: 0;
 	background-image: url("../img/cross-big.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -1118,7 +1139,7 @@ body {
 
 .modal-form input[type="text"] {
 	width: 267px;
-	height: 44px;
+	min-height: 44px;
 	margin-bottom: 20px;
 	padding-left: 13px;
 	border-radius: 5px;
@@ -1127,13 +1148,33 @@ body {
 
 .modal-form textarea {
 	width: 428px;
-	height: 155px;
-	margin-bottom: 20px;
+	min-height: 155px;
+	margin-bottom: 25px;
 	padding-top: 14px;
 	padding-left: 13px;
 	color: #999999;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
+}
+
+.modal-form input[type="text"]:hover,
+.modal-form input[type="text"]:focus,
+.modal-form textarea:hover,
+.modal-form textarea:focus {
+	border: 2px solid #c7c6c5;
+}
+
+.modal-form input[type="text"]:active,
+.modal-form textarea:active {
+	border: 2px solid #8fbdec;
+	color: #323232;
+}
+
+.modal-form .button {
+	width: 139px;
+	padding: 10px 23px;
+	margin-left: 290px;
+	border: none;
 }
 
 .main-footer p,
