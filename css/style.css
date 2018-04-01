@@ -460,11 +460,7 @@ body {
 }
 
 .cart-wrapper {
-
-
-
-
-
+	display: none;
 	position: absolute;
 	top: 36px;
 	right: -1px;
