@@ -55,6 +55,10 @@ body {
 	padding: 0 27px;
 }
 
+.main-navigation {
+	max-width: 600px;
+}
+
 .site-navigation-list {
 	position: relative;
 	display: flex;
@@ -181,11 +185,12 @@ body {
 }
 
 .user-navigation {
-	margin-left: 325px;
+	margin-left: auto;
 }
 
 .user-navigation-list  {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 0;
 	margin-top: 14px;
@@ -455,9 +460,7 @@ body {
 }
 
 .cart-wrapper {
-
-
-
+	display: none;
 	position: absolute;
 	top: 36px;
 	right: -1px;
@@ -654,9 +657,9 @@ body {
 	display: block;
 	position: relative;
 	width: 279px;
-	height: 63px;
+	min-height: 63px;
 	border-radius: 50px;
-	padding: 8px 40px 15px;
+	padding: 8px 40px 11px;
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: bold;
@@ -686,6 +689,7 @@ body {
 	left: 27px;
 	z-index: 3;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 79px;
 }
@@ -723,6 +727,7 @@ body {
 
 .promo-items {
 	display: flex;
+	align-items: flex-start;
 	margin: 0 0 39px;
 	padding: 0;
 }
@@ -749,6 +754,7 @@ body {
 	display: block;
 	margin-top: 14px;
 	margin-left: 1px;
+	padding-bottom: 50px;
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: bold;
@@ -759,12 +765,12 @@ body {
 	position: absolute;
 	bottom: 24px;
 	right: 21px;
-	padding: 10px 22px 13px;
+	padding: 10px 22.5px 11px;
 }
 
 .button {
 	display: block;
-	height: 45px;
+	min-height: 45px;
 	border-radius: 25px;
 	font-size: 18px;
 	line-height: 24px;
@@ -788,6 +794,7 @@ body {
 
 .promo-jam {
 	position: relative;
+	background-color: #82263f;
 	background-image: url("../img/jam.jpg");
 	background-repeat: no-repeat;
 	border-radius: 15px;
@@ -795,6 +802,7 @@ body {
 
 .promo-chocolate {
 	position: relative;
+	background-color: #5c351c;
 	background-image: url("../img/chocolate.jpg");
 	background-repeat: no-repeat;
 	border-radius: 15px;
@@ -872,6 +880,7 @@ body {
 	position: relative;
 	display: block;
 	margin-top: 9px;
+	padding: 0 6px;
 	text-align: center;
 	font-size: 16px;
 	line-height: 22px;
@@ -891,7 +900,7 @@ body {
 	top: 103%;
 	left: 33px;
 	width: 200px;
-	height: 44px;
+	min-height: 44px;
 	padding: 10px 15px 12px;
 }
 
@@ -900,7 +909,7 @@ body {
 	z-index: 1;
 }
 
-.catalog-item:hover::before {
+.catalog-item:hover::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -1016,6 +1025,7 @@ body {
 
 .interactive-news {
 	display: flex;
+	align-items: flex-start;
 	margin-bottom: 38px;
 }
 
@@ -1025,6 +1035,7 @@ body {
 	padding: 23px 250px 0 19px;
 	margin: 0 26px 0 0;
 	border-radius: 15px;
+	background-color: #ffffff;
 	background-image: url("../img/strawberry.jpg");
 	background-repeat: no-repeat;
 }
@@ -1092,6 +1103,7 @@ body {
 
 .mailing-form input {
 	display: inline-block;
+	vertical-align: baseline;
 }
 
 .mailing-form input[type="text"] {
@@ -1188,7 +1200,7 @@ body {
 	padding: 17px 24px;
 	background-color: #f8f7f4;
 	border-radius: 10px;
-	z-index: 4;
+	z-index: 5;
 }
 
 .modal-wrapper {
@@ -1205,7 +1217,7 @@ body {
 	color: #323232;
 }
 
-.modal-wrapper .close-btn {
+.modal-wrapper .modal-close-btn {
 	width: 18px; 
 	height: 17px;
 	margin-right: -8px;
@@ -1254,6 +1266,21 @@ body {
 	padding: 7px 23px 8px;
 	margin-left: 290px;
 	border: none;
+}
+
+.modal-overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 4;
+}
+
+.modal-show {
+	display: block;
 }
 
 .main-footer p,
@@ -1390,10 +1417,11 @@ body {
 }
 
 .breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	margin-top: -22px;
 	margin-bottom: 6px;
-	display: flex;
 }
 
 .breadcrumbs li,
@@ -1406,8 +1434,9 @@ body {
 
 .breadcrumbs li span {
 	display: inline-block;
-	text-decoration: none;
+	vertical-align: baseline;
 	margin: 0 7px;
+	text-decoration: none;
 }
 
 .breadcrumbs li a:hover,
@@ -1531,7 +1560,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 415px;
-	height: 37px;
+	min-height: 37px;
 	padding: 10px 14px;
 	border-radius: 20px;
  	background-color: #abbcb2;
@@ -1591,7 +1620,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 703px;
-	height: 37px;
+	min-height: 37px;
 	padding: 9px 16px 8px 15px;
 	border-radius: 20px;
  	background-color: #abbcb2;
@@ -1652,7 +1681,7 @@ body {
 
 .sort-type-btn {
 	width: 145px;
-	height: 37px;
+	min-height: 37px;
 	margin-top: 27px;
 	font-size: 16px;
 	line-height: 18px;
@@ -1677,13 +1706,12 @@ body {
 }
 
 .pagination-list {
-	position: relative;
-	padding: 42px 0 30px 948px;
-	margin: 0;
-	margin-right: 2px;
-	margin-bottom: 36px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	position: relative;
+	padding: 42px 0 30px 0;
+	margin: 0;
+	margin-bottom: 36px;
 	border-bottom: 1px solid #a9bbb1;
 }
 
@@ -1697,6 +1725,12 @@ body {
 	line-height: 18px;
 	color: #ffffff;
 	text-decoration: none;
+}
+
+.pagination-list .next a {
+	width: 8px;
+	height: 12px;
+	padding: 5px 10.5px 4px;
 }
 
 .pagination-list a:hover,
@@ -1737,7 +1771,7 @@ body {
 	width: 8px;
 	height: 12px;
 	position: absolute;
-	right: 180px;
+	right: 181px;
 	bottom: 36px;
 	background-image: url("../img/icon-right-small.svg");
 	background-repeat: no-repeat;
