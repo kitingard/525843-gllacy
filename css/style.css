@@ -510,7 +510,6 @@ body {
 	padding: 11px 0;
 	background: none;
     border: 0;
-    padding: 11px 0;
 	background-image: url("../img/cross-small.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
@@ -572,9 +571,9 @@ body {
 
 .working-hours {
 	padding-top: 16px;
-	width: 170px;
+	width: 200px;
 	min-height: 45px;
-	margin-left: 978px;
+	margin-left: 948px;
 	margin-top: -20px;
 	text-align: right;
 }
@@ -906,7 +905,7 @@ body {
 
 .catalog-item:hover .button-hidden {
 	display: block;
-	z-index: 1;
+	z-index: 2;
 }
 
 .catalog-item:hover::after {
@@ -1466,6 +1465,7 @@ body {
 .sort-type-form {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 .sorting {
@@ -1681,15 +1681,13 @@ body {
 
 .sort-type-btn {
 	width: 145px;
-	min-height: 37px;
-	margin-top: 27px;
+	min-height: 36px;
+	margin-top: 28px;
 	font-size: 16px;
 	line-height: 18px;
 	color: #ffffff;
 	border-radius: 20px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: rgb(255, 255, 255);
+	border: 2px solid rgb(255, 255, 255);
 	background-color: rgba(255, 255, 255, 0.188);
 }
 
