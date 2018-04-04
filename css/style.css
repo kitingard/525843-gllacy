@@ -43,6 +43,10 @@ body {
 	list-style: none;
 }
 
+.main-header {
+	position: relative;
+}
+
 .main-header .container {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -58,6 +62,18 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 0 27px;
+}
+
+.backlight {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1200px;
+	height: 647px;
+	background-image: url("../img/backlight.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	z-index: -1ж
 }
 
 .main-navigation {
@@ -265,7 +281,8 @@ body {
 	height: 84px;
 	padding: 20px 15px;
 	background-color: #f8f7f4;
-	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
 }
 
 .search form::before {
@@ -310,7 +327,6 @@ body {
 	padding-left: 44px;
 	padding-top: 8px;
 	border-radius: 15px;
-	background-color: #a1b5aa;
 }
 
 .login-link .login-link-dropdown::before {
@@ -323,6 +339,18 @@ body {
 	background-image: url("../img/entrance.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+.login-link .login-link-dropdown::after {
+	content:"";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 92px;
+	height: 32px;
+	border-radius: 15px;
+	background-color: rgb(255, 255, 255);
+	opacity: 0.2;
 }
 
 .login-link .login-link-dropdown:hover,
@@ -358,7 +386,8 @@ body {
 	line-height: 24px;
 	color: #999999; 
 	background-color: #f8f7f4;
-	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 6px;
 }
 
 .login-link-form::before {
@@ -493,6 +522,7 @@ body {
 	height: 242px;
 	padding: 17px 11px 20px 14px;
 	background-color: #f8f7f4;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 }
 
@@ -1590,16 +1620,25 @@ body {
 }
 
 .sorting select {
+	position: relative;
 	width: 193px;
 	height: 37px;
+	padding-left: 15px;
+	-webkit-appearance: none;
 	border: none;
 	border-radius: 20px;
 	background-color: #abbcb2;
 	color: #ffffff;
+	background-image: url("../img/icon-down-dir-white.svg");
+	background-repeat: no-repeat;
+	background-position: 165px 14px;
 }
 
 .sorting select:hover {
 	color: #323232;
+	background-image: url("../img/icon-down-dir-black.svg");
+	background-repeat: no-repeat;
+	background-position: 165px 14px;
 }
 
 .price-filter {
