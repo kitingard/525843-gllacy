@@ -64,6 +64,10 @@ body {
 	padding-top: 10px;
 }
 
+.main-header-inside .container {
+	z-index: initial;
+}
+
 .container {
 	width: 1200px;
 	margin: 0 auto;
@@ -288,7 +292,8 @@ body {
 	height: 84px;
 	padding: 20px 15px;
 	background-color: #f8f7f4;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 6px;
 }
 
@@ -314,13 +319,15 @@ body {
 .search-form input:hover,
 .search-form input:focus {
 	border: 1px solid #c7c6c5;
-	box-shadow: 0 0 0 1px #c7c6c5;
+	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
+	        box-shadow: 0 0 0 1px #c7c6c5;
 }
 
 .search-form input:active {
 	border: none;
 	border: 1px solid #8fbdec;
-	box-shadow: 0 0 0 1px #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	        box-shadow: 0 0 0 1px #8fbdec;
 	color: #323232;
 }
 
@@ -395,7 +402,8 @@ body {
 	line-height: 24px;
 	color: #999999; 
 	background-color: #f8f7f4;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 6px;
 }
 
@@ -425,14 +433,16 @@ body {
  .login-link-form input[type="text"]:focus,
  .login-link-form input[type="password"]:focus {
  	border: 1px solid #c7c6c5;
-	box-shadow: 0 0 0 1px #c7c6c5;
+	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
+	        box-shadow: 0 0 0 1px #c7c6c5;
  }
 
 .login-link-form input[type="text"]:active,
 .login-link-form input[type="password"]:active {
 	border: none;
 	border: 1px solid #8fbdec;
-	box-shadow: 0 0 0 1px #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	        box-shadow: 0 0 0 1px #8fbdec;
 	color: #323232;
  } 
 
@@ -544,7 +554,8 @@ body {
 	height: 242px;
 	padding: 17px 11px 20px 14px;
 	background-color: #f8f7f4;
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	border-radius: 5px;
 }
 
@@ -1267,12 +1278,14 @@ body {
 .mailing-form input[type="text"]:hover,
 .mailing-form input[type="text"]:focus {
 	border: 1px solid #c7c6c5;
-	box-shadow: 0 0 0 1px #c7c6c5;
+	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
+	        box-shadow: 0 0 0 1px #c7c6c5;
 }
 
 .mailing-form input[type="text"]:active {
 	border: 1px solid #8fbdec;
-	box-shadow: 0 0 0 1px #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	        box-shadow: 0 0 0 1px #8fbdec;
 	color: #323232;
 }
 
@@ -1418,13 +1431,15 @@ body {
 .modal-form textarea:hover,
 .modal-form textarea:focus {
 	border: 1px solid #c7c6c5;
-	box-shadow: 0 0 0 1px #c7c6c5;
+	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
+	        box-shadow: 0 0 0 1px #c7c6c5;
 }
 
 .modal-form input[type="text"]:active,
 .modal-form textarea:active {
 	border: 1px solid #8fbdec;
-	box-shadow: 0 0 0 1px #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	        box-shadow: 0 0 0 1px #8fbdec;
 	color: #323232;
 }
 
