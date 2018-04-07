@@ -1301,6 +1301,8 @@ body {
 
 .interactive-map {
 	position: absolute;
+	width: 100%;
+	border: none;
 	z-index: 2;
 }
 
