@@ -191,6 +191,8 @@ body {
 }
 .user-navigation {
 	margin-left: auto;
+	position: relative;
+	z-index: 1;
 }
 .user-navigation-list {
 	display: -webkit-box;
