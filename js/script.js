@@ -14,7 +14,7 @@
       var isStorageSupport = true;
       var loginKey = "";
       var emailKey = "";
-  
+
       try {
           loginKey = localStorage.getItem("login");
       } catch (err) {
@@ -26,72 +26,72 @@
           popup.classList.add("modal-show");
           overlay.classList.add("overlay-show");
           if (loginKey) {
-            login.value = loginKey;
-            email.focus();
+              login.value = loginKey;
+              email.focus();
           } else {
-            login.focus();
+              login.focus();
           }
           if (emailKey) {
-            email.value = emailKey;
-          } 
+              email.value = emailKey;
+          }
       });
 
       form.addEventListener("submit", function(evt) {
-        if (!login.value || !email.value) {
-          evt.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-          if (!login.value) {
-            login.classList.add("modal-error-border");
+          if (!login.value || !email.value) {
+              evt.preventDefault();
+              popup.classList.remove("modal-error");
+              popup.offsetWidth = popup.offsetWidth;
+              popup.classList.add("modal-error");
+              if (!login.value) {
+                  login.classList.add("modal-error-border");
+              } else {
+                  login.classList.remove("modal-error-border");
+              }
+              if (!email.value) {
+                  email.classList.add("modal-error-border");
+              } else {
+                  email.classList.remove("modal-error-border");
+              }
+              if (!textarea.value) {
+                  textarea.classList.add("modal-error-border");
+              } else {
+                  login.classList.remove("modal-error-border");
+              }
           } else {
-            login.classList.remove("modal-error-border");
-            }
-          if (!email.value) {
-            email.classList.add("modal-error-border");
-          } else {
-            email.classList.remove("modal-error-border");
-            }
-          if (!textarea.value) {
-            textarea.classList.add("modal-error-border");
-          } else {
-            login.classList.remove("modal-error-border");
-            }
-        } else {
-            if (isStorageSupport) {
-              localStorage.setItem("login", login.value);
-              localStorage.setItem("email", email.value);
-            }
-        }
+              if (isStorageSupport) {
+                  localStorage.setItem("login", login.value);
+                  localStorage.setItem("email", email.value);
+              }
+          }
       });
-      
+
       email.addEventListener("click", function(evt) {
-        if (email.classList.contains("modal-error-border")) {
-            evt.preventDefault();
-            login.classList.remove("modal-error-border");
-            email.classList.remove("modal-error-border");
-            textarea.classList.remove("modal-error-border");
+          if (email.classList.contains("modal-error-border")) {
+              evt.preventDefault();
+              login.classList.remove("modal-error-border");
+              email.classList.remove("modal-error-border");
+              textarea.classList.remove("modal-error-border");
           }
       });
 
       textarea.addEventListener("click", function(evt) {
-        if (textarea.classList.contains("modal-error-border")) {
-            evt.preventDefault();
-            login.classList.remove("modal-error-border");
-            email.classList.remove("modal-error-border");
-            textarea.classList.remove("modal-error-border");
+          if (textarea.classList.contains("modal-error-border")) {
+              evt.preventDefault();
+              login.classList.remove("modal-error-border");
+              email.classList.remove("modal-error-border");
+              textarea.classList.remove("modal-error-border");
           }
       });
 
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          if (popup.classList.contains("modal-show")) {
-            evt.preventDefault();
-            popup.classList.remove("modal-show");
-            popup.classList.remove("modal-error");
-            overlay.classList.remove("overlay-show");
+      window.addEventListener("keydown", function(evt) {
+          if (evt.keyCode === 27) {
+              if (popup.classList.contains("modal-show")) {
+                  evt.preventDefault();
+                  popup.classList.remove("modal-show");
+                  popup.classList.remove("modal-error");
+                  overlay.classList.remove("overlay-show");
+              }
           }
-        }
       });
 
       close.addEventListener("click", function(evt) {
