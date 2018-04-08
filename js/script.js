@@ -64,15 +64,7 @@
             }
         }
       });
-
-      email.addEventListener("click", function(evt) {
-        if (!email) {
-            email.classList.add("modal-error-border");
-          } else {
-            email.classList.remove("modal-error-border");
-          }
-      });
-
+      
       email.addEventListener("click", function(evt) {
         if (email.classList.contains("modal-error-border")) {
             evt.preventDefault();
