@@ -42,9 +42,21 @@
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
-          login.classList.add("modal-error-border");
-          email.classList.add("modal-error-border");
-          textarea.classList.add("modal-error-border");
+          if (!login.value) {
+            login.classList.add("modal-error-border");
+          } else {
+            login.classList.remove("modal-error-border");
+            }
+          if (!email.value) {
+            email.classList.add("modal-error-border");
+          } else {
+            email.classList.remove("modal-error-border");
+            }
+          if (!textarea.value) {
+            textarea.classList.add("modal-error-border");
+          } else {
+            login.classList.remove("modal-error-border");
+            }
         } else {
             if (isStorageSupport) {
               localStorage.setItem("login", login.value);
@@ -53,12 +65,11 @@
         }
       });
 
-      login.addEventListener("click", function(evt) {
-        if (login.classList.contains("modal-error-border")) {
-            evt.preventDefault();
-            login.classList.remove("modal-error-border");
+      email.addEventListener("click", function(evt) {
+        if (!email) {
+            email.classList.add("modal-error-border");
+          } else {
             email.classList.remove("modal-error-border");
-            textarea.classList.remove("modal-error-border");
           }
       });
 
