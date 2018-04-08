@@ -55,31 +55,13 @@
               if (!textarea.value) {
                   textarea.classList.add("modal-error-border");
               } else {
-                  login.classList.remove("modal-error-border");
+                  textarea.classList.remove("modal-error-border");
               }
           } else {
               if (isStorageSupport) {
                   localStorage.setItem("login", login.value);
                   localStorage.setItem("email", email.value);
               }
-          }
-      });
-
-      email.addEventListener("click", function(evt) {
-          if (email.classList.contains("modal-error-border")) {
-              evt.preventDefault();
-              login.classList.remove("modal-error-border");
-              email.classList.remove("modal-error-border");
-              textarea.classList.remove("modal-error-border");
-          }
-      });
-
-      textarea.addEventListener("click", function(evt) {
-          if (textarea.classList.contains("modal-error-border")) {
-              evt.preventDefault();
-              login.classList.remove("modal-error-border");
-              email.classList.remove("modal-error-border");
-              textarea.classList.remove("modal-error-border");
           }
       });
 
