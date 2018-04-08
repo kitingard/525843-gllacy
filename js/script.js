@@ -5,7 +5,7 @@
       var form = popup.querySelector("form");
       var login = popup.querySelector("[name=name-for-feedback]");
       var email = popup.querySelector("[name=email-for-feedback]");
-      var emailKey = localStorage.getItem("email");
+      var textarea = popup.querySelector("[name=feedback-textarea]");
       var slide1 = document.querySelector(".slide-btn1");
       var slide2 = document.querySelector(".slide-btn2");
       var slide3 = document.querySelector(".slide-btn3");
@@ -42,12 +42,42 @@
           popup.classList.remove("modal-error");
           popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
+          login.classList.add("modal-error-border");
+          email.classList.add("modal-error-border");
+          textarea.classList.add("modal-error-border");
         } else {
             if (isStorageSupport) {
               localStorage.setItem("login", login.value);
               localStorage.setItem("email", email.value);
             }
         }
+      });
+
+      login.addEventListener("click", function(evt) {
+        if (login.classList.contains("modal-error-border")) {
+            evt.preventDefault();
+            login.classList.remove("modal-error-border");
+            email.classList.remove("modal-error-border");
+            textarea.classList.remove("modal-error-border");
+          }
+      });
+
+      email.addEventListener("click", function(evt) {
+        if (email.classList.contains("modal-error-border")) {
+            evt.preventDefault();
+            login.classList.remove("modal-error-border");
+            email.classList.remove("modal-error-border");
+            textarea.classList.remove("modal-error-border");
+          }
+      });
+
+      textarea.addEventListener("click", function(evt) {
+        if (textarea.classList.contains("modal-error-border")) {
+            evt.preventDefault();
+            login.classList.remove("modal-error-border");
+            email.classList.remove("modal-error-border");
+            textarea.classList.remove("modal-error-border");
+          }
       });
 
       window.addEventListener("keydown", function (evt) {
