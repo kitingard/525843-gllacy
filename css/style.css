@@ -89,8 +89,8 @@ body {
 	font-weight: bold;
 	-webkit-text-decoration-style: solid;
 	text-decoration-style: solid;
-	-webkit-text-decoration-color: #a9bfb3;
-	text-decoration-color: #a9bfb3;
+	-webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
+	text-decoration-color: rgba(255, 255, 255, 0.2);
 	-webkit-text-decoration-line: underline;
 	text-decoration-line: underline;
 }
@@ -121,7 +121,7 @@ body {
 	display: none;
 	position: absolute;
 	top: 38px;
-	left: -8px;
+	left: -6px;
 	width: 143px;
 	padding: 0;
 	background-color: rgb(248, 247, 244);
@@ -141,7 +141,7 @@ body {
 .catalog-dropdown a {
 	display: block;
 	margin: 0;
-	padding: 2.2px 0 8px 20px;
+	padding: 5px 0 5px 20px;
 	font-size: 14px;
 	line-height: 16pt;
 	font-weight: normal;
@@ -154,17 +154,23 @@ body {
 	padding: 8px 0 11px 20px;
 	font-weight: bold;
 }
+.catalog-dropdown-link:nth-of-type(3) a {
+	padding: 2.2px 0 5px 20px;
+}
 .catalog-dropdown-link:first-of-type a::before {
 	content: "";
 	position: absolute;
-	top: 38px;
+	top: 39px;
 	left: 6px;
 	width: 128px;
 	height: 1px;
 	background-color: #d1d0ce;
 }
 .catalog-dropdown-link:nth-of-type(2) a {
-	padding: 6px 0 10px 20px;
+	padding: 6px 0 8px 20px;
+}
+.catalog-dropdown-link:last-of-type a {
+	padding: 5px 0 11px 20px;
 }
 .catalog-dropdown a:hover,
 .catalog-dropdown a:focus {
@@ -1159,6 +1165,7 @@ body {
 }
 .map {
 	margin: 0 auto;
+	background-color: #f7f1d9;
 }
 .contacts-form {
 	position: absolute;
@@ -1695,7 +1702,7 @@ body {
 	background-position: 0 0;
 	opacity: 0.8;
 }
-.radio-wrapper input:checked + label::after {
+.radio-input:checked + label::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -1707,16 +1714,16 @@ body {
 	background-position: 0 0;
 	opacity: 1;
 }
-.radio-wrapper input:hover + label::before {
+.radio-input:hover + label::before {
 	opacity: 1;
 }
-.radio-wrapper input:hover + label {
+.radio-input:hover + label {
 	color: #ffffff;
 }
-.radio-wrapper input:focus + label::before {
+.radio-input:focus + label::before {
 	outline: 4px solid #8fbdec;
 }
-.radio-wrapper input:disabled + label {
+.radio-input:disabled + label {
 	opacity: 0.4;
 }
 .checkbox-wrapper {
@@ -1750,7 +1757,7 @@ body {
 	background-position: 0 0;
 	opacity: 0.8;
 }
-.checkbox-wrapper input:checked + label::after {
+.checkbox-input:checked + label::after {
 	content: '';
 	position: absolute;
 	top: -1px;
@@ -1762,16 +1769,16 @@ body {
 	background-position: 0 0;
 	opacity: 1;
 }
-.checkbox-wrapper input:hover + label::before {
+.checkbox-input:hover + label::before {
 	opacity: 1;
 }
-.checkbox-wrapper input:hover + label {
+.checkbox-input:hover + label {
 	color: #ffffff;
 }
-.checkbox-wrapper input:focus + label::before {
+.checkbox-input:focus + label::before {
 	outline: 4px solid #8fbdec;
 }
-.checkbox-wrapper input:disabled + label {
+.checkbox-input:disabled + label {
 	opacity: 0.4;
 }
 .sort-type-items label {
