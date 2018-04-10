@@ -172,6 +172,9 @@ body {
 .catalog-dropdown-link:last-of-type a {
 	padding: 5px 0 11px 20px;
 }
+.catalog-dropdown-link-current {
+	background-color: #d07058;
+}
 .catalog-dropdown a:hover,
 .catalog-dropdown a:focus {
 	background-color: rgb(251, 222, 215);
@@ -1151,6 +1154,7 @@ body {
 }
 .contacts {
 	position: relative;
+	background-color: #fef7ef;
 }
 .interactive-map {
 	position: absolute;
@@ -1160,10 +1164,11 @@ body {
 }
 .contacts .container {
 	position: relative;
-	margin-bottom: 30px;
+	margin-bottom: 35px;
 	padding: 0;
 }
 .map {
+	display: block;
 	margin: 0 auto;
 	background-color: #f7f1d9;
 }
@@ -1280,6 +1285,13 @@ body {
 	-webkit-box-shadow: 0 0 0 1px #8fbdec;
 	box-shadow: 0 0 0 1px #8fbdec;
 	color: #323232;
+}
+.feedback-input:focus,
+.modal-form textarea:focus {
+	outline: none;
+	border: 1px solid #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	box-shadow: 0 0 0 1px #8fbdec;
 }
 .modal-form .button {
 	width: 139px;
