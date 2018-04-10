@@ -175,6 +175,9 @@ body {
 .catalog-dropdown-link-current {
 	background-color: #d07058;
 }
+.catalog-dropdown-link-current a {
+	color: #ffffff;
+}
 .catalog-dropdown a:hover,
 .catalog-dropdown a:focus {
 	background-color: rgb(251, 222, 215);
@@ -289,11 +292,16 @@ body {
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
 }
-.search-form input:hover,
-.search-form input:focus {
+.search-form input:hover {
 	border: 1px solid #c7c6c5;
 	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
 	box-shadow: 0 0 0 1px #c7c6c5;
+}
+.search-form input:focus {
+	outline: none;
+	border: 1px solid #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	box-shadow: 0 0 0 1px #8fbdec;
 }
 .search-form input:active {
 	border: none;
@@ -390,9 +398,7 @@ body {
 	border: 1px solid #d3d3d2;
 }
 .login-link-form input[type="text"]:hover,
-.login-link-form input[type="password"]:hover,
-.login-link-form input[type="text"]:focus,
-.login-link-form input[type="password"]:focus {
+.login-link-form input[type="password"]:hover {
 	border: 1px solid #c7c6c5;
 	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
 	box-shadow: 0 0 0 1px #c7c6c5;
@@ -404,6 +410,13 @@ body {
 	-webkit-box-shadow: 0 0 0 1px #8fbdec;
 	box-shadow: 0 0 0 1px #8fbdec;
 	color: #323232;
+}
+.login-link-form input[type="text"]:focus,
+.login-link-form input[type="password"]:focus  {
+	outline: none;
+	border: 1px solid #8fbdec;
+	-webkit-box-shadow: 0 0 0 1px #8fbdec;
+	box-shadow: 0 0 0 1px #8fbdec;
 }
 .login-link-wrapper {
 	display: -webkit-box;
@@ -812,9 +825,7 @@ body {
 	background-image: -webkit-linear-gradient(bottom, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
 	background-image: -o-linear-gradient(bottom, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
 	background-image: linear-gradient(0deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
-	;
 	-webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-	;
 	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 .button:hover,
@@ -1272,9 +1283,7 @@ body {
 	border: 1px solid #d3d3d2;
 }
 .feedback-input:hover,
-.feedback-input:focus,
-.modal-form textarea:hover,
-.modal-form textarea:focus {
+.modal-form textarea:hover {
 	border: 1px solid #c7c6c5;
 	-webkit-box-shadow: 0 0 0 1px #c7c6c5;
 	box-shadow: 0 0 0 1px #c7c6c5;
